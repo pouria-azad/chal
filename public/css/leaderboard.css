@@ -1,0 +1,47 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.leaderboard-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.leaderboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body {
+    font-size: 1rem;
+}
+
+.rank {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #138496;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.leaderboard-table th {
+    background-color: #e9ecef;
+}

@@ -1,0 +1,53 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.progress-bar {
+    animation: progress-animation 3s ease-in-out;
+}
+.progress {
+    background-color: #e9ecef; /* رنگ پس‌زمینه نوار پیشرفت */
+}
+
+@keyframes progress-animation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #17a2b8;
+}
+
+#timer {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.table {
+    background-color: #ffffff;
+}
+.table th, .table td {
+    vertical-align: middle; /* تراز عمودی */
+}
+
+.blur-row {
+    filter: blur(2px);
+}
+
+.text-primary {
+    font-weight: bold; /* متن پررنگ */
+}
+

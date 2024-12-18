@@ -1,0 +1,73 @@
+body {
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #343a40;
+}
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #0056b3;
+}
+.notifications-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.notifications {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}
+.notifications:hover {
+    background-color: #f1f3f5;
+}
+.notifications h2 {
+    margin-top: 0;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+.notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+.notifications li {
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 4px solid #007bff;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.notifications li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 4px solid #0056b3;
+}
+.bottom-menu a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.bottom-menu a:hover {
+    color: #ffd700;
+}
