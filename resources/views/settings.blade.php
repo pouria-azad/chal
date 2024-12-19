@@ -23,8 +23,7 @@
         </div>  
 
         <!-- بخش اطلاعات اضافی -->  
-        <div class="section">  
-            <h3>اطلاعات اضافی</h3>  
+        <div class="section">   
             <button class="bbb">گزارش مشکل</button>  
             <button class="bbb">ارسال بازخورد</button>  
             <p>نسخه برنامه: 1.0.0</p>  

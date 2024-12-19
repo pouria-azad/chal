@@ -5,7 +5,7 @@
 @endsection('css')
 
 @section('content')
-
+ 
     <main class="notifications-page">
         <section class="notifications new">
             <h2>اعلان‌های جدید</h2>

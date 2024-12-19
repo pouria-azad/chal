@@ -7,7 +7,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     @yield('css')
-
     <style>
         .breadcrumb {
             
@@ -31,6 +30,10 @@
             background: linear-gradient(90deg, #6a11cb, #2575fc); /* گرادیانت اولیه */ 
             width: 100%;
             height: 100%;
+        }
+
+        div:where(.swal2-container).swal2-center>.swal2-popup {
+            border-radius: 25px;
         }
 
     </style>
@@ -72,7 +75,7 @@
     </nav>
 
     <!-- Breadcrumb -->
-    <nav aria-label="breadcrumb" class="mt-2">
+    <nav aria-label="breadcrumb" class="mt-2 mx-2">
         <!-- Breadcrumb -->
         <ol class="breadcrumb">  
             <li class="breadcrumb-item">  
@@ -123,9 +126,30 @@
 
         setInterval(rotateGradient, 4000); // هر 50 میلی‌ثانیه چرخش
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.2/dist/sweetalert2.all.min.js"></script>
+    <script>
+        function showCelebrationAlert() {  
+            Swal.fire({
+            title: "آفرین بهت! 🏆",
+            width: 600,
+            timer: 5000,
+            timerProgressBar: true,
+            padding: "3em",
+            color: "#ffff",
+            text: "وضعیت چالش امروزت به انجام شده تغییر پیدا کرد.",
+            confirmButtonText: "بستن",
+            background: "#fff url(/img/ww.jpg)",
+            backdrop: `
+                rgba(0,0,123,0.4)
+                url("/images/nyan-cat.gif")
+                left top
+                no-repeat
+            `
+            });
+        }
+    </script>
 <!-- Footer -->
-<footer class="bg-primary text-white text-center py-3 mt-5">
+<footer class="bg-dark text-white text-center py-3 mt-5">
     <p>&copy; 2024 چالش‌های روزانه. همه حقوق محفوظ است.</p>
 </footer>
 

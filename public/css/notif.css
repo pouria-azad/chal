@@ -30,12 +30,7 @@ body {
 .notifications:hover {
     background-color: #f1f3f5;
 }
-.notifications h2 {
-    margin-top: 0;
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-}
+
 .notifications ul {
     list-style-type: none;
     padding: 0;

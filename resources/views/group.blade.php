@@ -27,7 +27,7 @@
                         <div class="progress-container">
                             <div class="progress-bar-custom" style="width: 70%"></div>
                         </div>
-                        <button class="join-button">پیوستن به چالش</button>
+                        <button class="join-button text-dark">پیوستن به چالش</button>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                         <div class="progress-container">
                             <div class="progress-bar-custom" style="width: 50%"></div>
                         </div>
-                        <button class="join-button">پیوستن به چالش</button>
+                        <button class="join-button text-dark">پیوستن به چالش</button>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                         <div class="progress-container">
                             <div class="progress-bar-custom" style="width: 40%"></div>
                         </div>
-                        <button class="join-button">پیوستن به چالش</button>
+                        <button class="join-button text-dark">پیوستن به چالش</button>
                     </div>
                 </div>
             </div>

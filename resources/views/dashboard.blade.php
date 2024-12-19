@@ -7,7 +7,7 @@
     <!-- Header with Profile -->
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-            <h1 class="text-primary">🎯 داشبورد چالش‌های روزانه</h1>
+            <h1 class="text-primary text-dark">🎯 داشبورد چالش‌های روزانه</h1>
             <p class="text-muted">چالش‌های امروز خود را کامل کنید و سطح خود را ارتقا دهید!</p>
         </div>
         <div class="text-center">
@@ -30,7 +30,7 @@
             <h5 class="card-title">چالش امروز</h5>
             <p class="card-text">20 دقیقه پیاده‌روی کن و از هوای تازه لذت ببر.</p>
             <div class="d-flex align-items-center justify-content-between">
-                <button class="btn btn-success">✅ انجام شد</button>
+                <button class="btn btn-success" onclick="showCelebrationAlert()">✅ انجام شد</button>
                 <div class="text-end">
                     <span class="text-muted">زمان باقی‌مانده:</span>
                     <span id="timer" class="text-danger fw-bold">00:20:00</span>
@@ -46,7 +46,7 @@
             <div class="card text-center shadow-sm">
                 <a style="text-decoration: none;" href="{{ route('ss') }}">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">آمار و پیشرفت</h5>
+                        <h5 class="card-title text-primary text-dark">آمار و پیشرفت</h5>
                     </div>
                 </a>
             </div>
@@ -56,7 +56,7 @@
             <div class="card text-center shadow-sm">
                 <a style="text-decoration: none;" href="{{ route('leaderboard') }}">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">رتبه من در هفته</h5>
+                        <h5 class="card-title text-primary text-dark">رتبه من در هفته</h5>
                         <p class="display-5 text-info fw-bold">45050</p>
                     </div>
                 </a>
@@ -67,7 +67,7 @@
     <!-- Challenge History -->
     <div class="mt-5">
         <a style="text-decoration: none;" href="{{ route('hist') }}">
-            <h3 class="text-primary">📜 تاریخچه چالش‌ها</h3>
+            <h3 class="text-primary text-dark">📜 تاریخچه چالش‌ها</h3>
         </a>
         <table class="table table-bordered mt-3 shadow-sm">
             <thead class="table-light">
@@ -123,6 +123,8 @@
     }
 
     const timerInterval = setInterval(updateTimer, 1000);
+
+    
 </script>
 @endsection('js')
 
