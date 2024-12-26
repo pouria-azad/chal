@@ -1,17 +1,13 @@
-body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-}
-
 .card {
     border-radius: 15px;
+
 }
 
 .progress-bar {
     animation: progress-animation 3s ease-in-out;
 }
 .progress {
-    background-color: #e9ecef; /* رنگ پس‌زمینه نوار پیشرفت */
+    background-color: #f9ffcd; /* رنگ پس‌زمینه نوار پیشرفت */
 }
 
 @keyframes progress-animation {
@@ -28,7 +24,7 @@ body {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #17a2b8;
+    border: 3px solid #76b947;
 }
 
 #timer {
@@ -36,11 +32,36 @@ body {
     font-size: 1.2rem;
 }
 
-.table {
-    background-color: #ffffff;
+.challenge-meta {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    color: #6c757d;
+    font-size: 0.875rem;
 }
+
+.progress-container {
+    background: #edf2f7;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar-custom {
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+
+
+
+}
+
 .table th, .table td {
     vertical-align: middle; /* تراز عمودی */
+}
+
+.table {
+    border-radius: 15px;
+    overflow: hidden; /* جلوگیری از برش گوشه‌ها */
 }
 
 .blur-row {

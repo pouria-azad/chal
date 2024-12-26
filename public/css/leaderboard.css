@@ -1,8 +1,5 @@
 
-body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-}
+
 
 .leaderboard-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -43,5 +40,5 @@ body {
 }
 
 .leaderboard-table th {
-    background-color: #e9ecef;
+    background-color: #ffc107;
 }

@@ -7,14 +7,14 @@
 @section('content')
 
 <div class="container mt-5">
-    <h1 class="text-primary text-center">🏆 رتبه‌بندی چالش‌ها</h1>
-    <p class="text-center text-muted mb-5">بهترین کاربران ما را مشاهده کنید و انگیزه بگیرید!</p>
+    <h1 class="text-dark text-center">🏆 رتبه‌بندی کاربران</h1>
+    <p class="text-center text-muted mb-5">بهترین کاربران هفته را مشاهده کنید و انگیزه بگیرید!</p>
 
     <!-- Leaderboard Table -->
     <div class="card leaderboard-card shadow-sm">
         <div class="card-header text-center">رتبه‌بندی بر اساس امتیاز</div>
         <div class="card-body">
-            <table class="table leaderboard-table">
+            <table class="table table-striped leaderboard-table">
                 <thead>
                     <tr>
                         <th>رتبه</th>
@@ -59,10 +59,6 @@
         </div>
     </div>
 
-    <!-- Filter Section -->
-    <div class="text-center mt-4">
-        <button class="btn btn-custom">نمایش چالش‌های جدیدتر</button>
-    </div>
 
 </div>
 

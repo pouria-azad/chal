@@ -1,14 +1,9 @@
-body {
-    font-family: 'Tahoma', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e9ecef;
-    color: #343a40;
-}
+
 .header {
     background-color: #007bff;
     color: white;
     padding: 20px;
+
     text-align: center;
     border-bottom: 4px solid #0056b3;
 }
@@ -16,9 +11,9 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.0); /* برای پس زمینه محو */
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
 }
 .notifications {
     margin-bottom: 20px;

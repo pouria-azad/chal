@@ -5,11 +5,6 @@
     font-family: Tahoma, Arial, sans-serif;
 }
 
-body {
-    background-color: #f5f7fa;
-    min-height: 100vh;
-}
-
 .main-content {
     padding: 20px;
     display: flex;
@@ -19,10 +14,9 @@ body {
 }
 
 .profile-container {
-    background: white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     width: 100%;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.0); /* برای پس زمینه محو */
 }
 
 .profile-header {
@@ -31,7 +25,7 @@ body {
     padding: 40px 20px;
     text-align: center;
     position: relative;
-    
+
 }
 
 .avatar {
@@ -64,6 +58,8 @@ body {
 
 .profile-body {
     padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .info-section {
@@ -95,24 +91,11 @@ body {
     font-weight: 500;
 }
 
-.btn-custom {
-    background: linear-gradient(45deg, #00c6ff, #0072ff);
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-    font-size: 16px;
-    margin-top: 20px;
-}
 
-.btn-custom:hover {
+button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(71, 118, 230, 0.3);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
-
 .status-badge {
     background: #22c55e;
     color: white;
@@ -124,12 +107,12 @@ body {
 
 @media (max-width: 480px) {
 
-    
+
     .profile-header {
         padding: 30px 15px;
     }
 
-    
+
 
     .avatar {
         width: 100px;
@@ -139,5 +122,6 @@ body {
 
     .profile-body {
         padding: 20px;
+
     }
 }

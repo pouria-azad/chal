@@ -1,39 +1,36 @@
-body {  
-    background-color: #f4f6f9;  
-    font-family: 'Vazirmatn', Arial, sans-serif;  
-}  
 
-.form-container {  
-    max-width: 500px;  
-    margin: 40px auto;  
-    background: white;  
-    padding: 30px;  
-    border-radius: 20px;  
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);  
-    transition: transform 0.3s ease;  
-}  
 
-.form-container:hover {  
-    transform: translateY(-5px);  
-}  
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
-.btn-custom {  
-    background: linear-gradient(to right, #17a2b8, #138496);  
-    color: white;  
-    transition: all 0.3s ease;  
-}  
+.form-container:hover {
+    transform: translateY(-5px);
+}
 
-.btn-custom:hover {  
-    background: linear-gradient(to right, #138496, #17a2b8);  
-    transform: scale(1.05);  
-}  
+.btn-custom {
+    background: linear-gradient(to right, #17a2b8, #138496);
+    color: white;
+    transition: all 0.3s ease;
+}
 
-.form-label {  
-    font-weight: bold;  
-    color: #495057;  
-}  
+.btn-custom:hover {
+    background: linear-gradient(to right, #138496, #17a2b8);
+    transform: scale(1.05);
+}
 
-.form-control {  
-    border-radius: 10px;  
-    padding: 10px;  
-}  
+.form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -3,12 +3,6 @@
     src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.2.2/dist/Vazir-Regular.woff2') format('woff2');
 }
 
-body {
-    font-family: 'Vazir', sans-serif;
-    background: linear-gradient(135deg, #f6f9fc 0%, #edf2f7 100%);
-    color: #2d3748;
-}
-
 
 .search-container {
     position: relative;
@@ -86,25 +80,13 @@ body {
     line-height: 1.6;
 }
 
-.progress-bar-custom {
-    height: 6px;
-    border-radius: 3px;
-    background: linear-gradient(45deg, #1c92d2, #d5e4ff);
-}
-
-.progress-container {
-    background: #edf2f7;
-    border-radius: 3px;
-    margin-bottom: 1.5rem;
-}
-
 .join-button {
     width: 100%;
     padding: 0.8rem;
     border: none;
-    border-radius: 1rem;
-    background: linear-gradient(45deg, #f6d365, #fda085);
-    color: white;
+    border-radius: 0.6rem;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: #ffffff;
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -114,8 +96,32 @@ body {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
+.join-button-2 {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: rgb(10, 88, 202);
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.join-button-2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.challenge-meta {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
 @media (max-width: 768px) {
-    
+
     .search-container {
         margin: 1.5rem auto 2rem;
         padding: 0 1rem;

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/pouria/Desktop/challenge/database/database.sqlite" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1839"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:maincache"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO &quot;cat_chal&quot; ( &quot;cat_id&quot;, &quot;chal_id&quot;) VALUES
+( 1, 1), -- خلاقیت و هنر -&gt; نقاشی با چشم‌های بسته
+( 1, 2), -- خلاقیت و هنر -&gt; نوشتن داستان 50 کلمه‌ای
+( 2, 3), -- تناسب اندام و سلامتی -&gt; 50 اسکوات در روز
+( 2, 4), -- تناسب اندام و سلامتی -&gt; آب خوردن روزانه 8 لیوان
+( 3, 5), -- توسعه شخصی -&gt; مدیتیشن 5 دقیقه‌ای
+( 4, 6), -- مهربانی و انسان‌دوستی -&gt; لبخند به غریبه‌ها
+( 5, 7), -- ماجراجویی و کشف -&gt; پیدا کردن یک کافه جدید
+( 5, 8); -- ماجراجویی و کشف -&gt; امتحان یک غذای جدید
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

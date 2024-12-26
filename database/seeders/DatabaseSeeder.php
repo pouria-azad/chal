@@ -2,8 +2,15 @@
 
 namespace Database\Seeders;
 
+use App\Models\Cat;
+use App\Models\Chal;
+use App\Models\ChalCat;
+use App\Models\ChalUser;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Factories\CategoryFactory;
+use Database\Factories\ChalCatFactory;
+use Database\Factories\ChallFactory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,11 +20,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+         User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+//        User::factory()->create([
+//            'name' => 'Test User',
+//            'email' => 'test@example.com',
+//        ]);
+
+        Cat::factory(10)->create();
+        Chal::factory(10)->create();
+        ChalUser::factory(10)->create();
     }
 }
