@@ -85,7 +85,7 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DB_URL'),
-            'host' => env('DB_HOST', 'chal1'),
+            'host' => env('DB_HOST', 'postgresql://root:ybueGln2HZg1E0Hhjgv4O6Bj@modest-robinson-njopxmiln-db:5432/postgres'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'laravel'),
             'username' => env('DB_USERNAME', 'root'),
