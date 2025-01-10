@@ -20,6 +20,7 @@ class ChalFactory extends Factory
         return [
             'name' => $this->faker->sentence(3), // نام چالش
             'desc' => $this->faker->paragraph,   // توضیحات چالش
+            'duration' => $this->faker->randomDigit(),
             'cat_id' => Cat::inRandomOrder()->first()->id,
         ];
     }

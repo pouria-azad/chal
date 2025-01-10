@@ -345,11 +345,6 @@
         border-color: var(--primary);
     }
 
-    .btn-primary:hover {
-        background: var(--secondary);
-        border-color: var(--secondary);
-    }
-
     .btn-custom {
         background: #6366f1;
         color: white;

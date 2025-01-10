@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cat;
+use App\Models\Chal;
 use Illuminate\Http\Request;
 
 class ChalController extends Controller
@@ -12,7 +14,7 @@ class ChalController extends Controller
     public function index()
     {
         $chals = \App\Models\Chal::all();
-        return view('group', compact('chals'));
+        return view('challenges.index', compact('chals'));
     }
 
     /**
@@ -20,7 +22,8 @@ class ChalController extends Controller
      */
     public function create()
     {
-        //
+        $cats = Cat::all();
+        return view('challenges.create', compact('cats'));
     }
 
     /**
@@ -28,7 +31,25 @@ class ChalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // اعتبارسنجی ورودی‌های فرم
+        $validatedData = $request->validate([
+            'title'       => 'required|string|max:255',
+            'description' => 'required|string',
+            'duration'    => 'required|integer|min:1',
+            'category_id' => 'required|exists:categories,id',
+        ]);
+
+        // ذخیره اطلاعات در جدول چالش‌ها
+        Chal::create([
+            'name'    => $validatedData['title'],
+            'desc'    => $validatedData['description'],
+            'duration' => $validatedData['duration'],
+            'cat_id'  => $validatedData['category_id'],
+        ]);
+
+        // هدایت کاربر به صفحه مناسب
+        return redirect()->route('challenges.index')
+            ->with('success', 'چالش با موفقیت ثبت شد!');
     }
 
     /**

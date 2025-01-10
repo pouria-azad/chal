@@ -17,7 +17,10 @@ Route::view('/login', 'login');
 
 Route::middleware(['auth'])->group(function (){
 
-    Route::get('/group', [\App\Http\Controllers\ChalController::class, 'index'])->name('group');
+    Route::get('/challenges', [\App\Http\Controllers\ChalController::class, 'index'])->name('challenges.index');
+    Route::get('/challenges/create', [\App\Http\Controllers\ChalController::class, 'create'])->name('challenges.create');
+    Route::post('/challenges/store', [\App\Http\Controllers\ChalController::class, 'store'])->name('challenges.store');
+
     Route::get('/ss', [\App\Http\Controllers\ChalUserController::class, 'index'])->name('chaluser.index');
     Route::post('/chaluser/', [\App\Http\Controllers\ChalUserController::class, 'store'])->name('chaluser.store');
     Route::patch('/chaluser/{id}', [\App\Http\Controllers\ChalUserController::class, 'update'])->name('chaluser.update');

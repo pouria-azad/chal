@@ -26,6 +26,7 @@
             border-color: var(--secondary);
         }
 
+
         body {
             background: linear-gradient(135deg, #ff85a2, #ffc300);
             font-family: 'Vazir', Arial, sans-serif;
@@ -84,7 +85,7 @@
                         <a class="nav-link {{ Route::currentRouteName() == 'dashboard' ? 'active' : '' }}" href="{{ route('dashboard') }}">داشبورد</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Route::currentRouteName() == 'group' ? 'active' : '' }}" href="{{ route('group') }}">چالش‌ها</a>
+                        <a class="nav-link {{ Route::currentRouteName() == 'challenges.index' ? 'active' : '' }}" href="{{ route('challenges.index') }}">چالش‌ها</a>
                     </li>
                     <li class="nav-item" style="position: relative;">
                         <a class="nav-link" href="{{ route('notif') }}">

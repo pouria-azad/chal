@@ -31,7 +31,7 @@
                     <h5 class="card-title text-success">🎉 همه چالش‌ها تکمیل شد!</h5>
                     <p class="card-text">شما امروز فوق‌العاده عمل کردید! ادامه بدهید و امتیاز بیشتری کسب کنید یا می‌توانید رتبه خود را ببینید.</p>
                     <div class="d-flex justify-content-center mt-3 gap-3">
-                        <a href="{{ route('group') }}" class="btn btn-danger">چالش بعدی</a>
+                        <a href="{{ route('challenges.index') }}" class="btn btn-danger">چالش بعدی</a>
                         <a href="{{ route('leaderboard') }}" class="btn btn-warning">📊 رتبه‌بندی من</a>
                     </div>
                 </div>
